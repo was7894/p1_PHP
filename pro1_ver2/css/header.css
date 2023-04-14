@@ -1,0 +1,246 @@
+.header {
+  position: relative;
+  z-index: 20;
+}
+
+/* -------------------------header-top--------------------------- */
+.header__top {
+  background-color: #2e363d;
+  height: 50px;
+}
+
+.header__top .util {
+  display: flex;
+  justify-content: center;
+}
+
+.header__top > .headertop__inner > ul > li {
+  margin: 14px 30px;
+}
+
+.header__top .headertop__inner .util a {
+  font-family: "GmarketSansMedium";
+  color: white;
+  /* tip a에 padding을주면 클릭범위가 늘어난다 */
+  padding: 3px 50px;
+  font: 16px;
+  position: relative;
+}
+/* out line */
+/* .header__top ul a:focus {
+  outline:1px dashed white;
+} */
+
+.header__top ul a span {
+  color: #df3326;
+}
+
+.header__top .headertop__inner ul a:hover::before {
+  content: "";
+  display: block;
+  bottom: -9px;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  background-color: #df3127;
+} /* header__top end */
+
+/* -------------------------header-bottom--------------------------- */
+.header__bottom {
+  background-color: rgb(46, 54, 61, 0.5);
+  height: 140px;
+  display: flex;
+  transition: all 0.1s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.header__bottom .headerbottom__inner {
+  display: flex;
+  align-items: center;
+}
+
+/* ----logo---- */
+.header__bottom .logo {
+  margin-left: 30px;
+}
+.header__bottom .logo img {
+  width: 220px;
+} /* logo end */
+
+/* gnb1+gnb2 */
+.header__bottom .gnb {
+  margin-left: 60px;
+}
+
+/* ---------- */
+/* gnb1(middle) */
+.dep1 {
+  display: flex;
+  align-items: center;
+  padding-top: 12px; /* 윗간격조절 */
+  padding-left: 16px;
+}
+
+.dep1 > li > a {
+  padding: 55px 11px;
+  /* font-family: , sans-serif; */
+  color: white;
+  font: 17px "NanumSquare", sans-serif;
+}
+
+/* ---------- */
+/* right GNB2 */
+
+.header_util {
+  display: flex;
+  align-items: center;
+}
+.header_util li {
+  margin-left: 10px;
+}
+
+.header_util li a {
+  color: white;
+  font: 14px "Noto Sans KR", sans-serif;
+  padding: 0 10px;
+  position: relative;
+}
+
+.header_util li:last-child a {
+  display: block;
+  padding-top: 15px;
+}
+
+.header_util li:nth-child(-n + 4) a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  bottom: -10px;
+}
+.hamber_menu {
+  position: relative;
+  top: 9px;
+  left: 3px;
+}
+
+/* right GNB end*/
+
+/* ******* */
+/* 12.12수정 */
+/* dep2 박스조정 */
+.all_dep2 {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 190px;
+  left: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #384046;
+}
+.dep2_inner {
+  display: flex;
+  width: 910px;
+  margin-left: 33%;
+}
+.dep2_tit {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  color: #df3326;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.dep2 {
+  display: block;
+}
+/* *********************************************** */
+/* dep1 올릴시 나타남 */
+/* .dep1 li:hover .all_dep2 {
+  display: block;
+} */
+
+.dep2 > li {
+  position: relative;
+  z-index: 1;
+  display: flex; /* de2 list의 다음 왼쪽정렬 */
+  background-color: #384046;
+}
+.dep2 > li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 210px;
+  height: 100%;
+  background: #303237;
+}
+/* depth 2 */
+.dep2 > li > a {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-block;
+  width: 210px;
+  height: 50px;
+  background-color: #303237;
+  color: #df3326;
+  font: 14px "arial";
+  padding: 10px 30px 10px 10px;
+}
+.dep2 > li:hover > a::before {
+  content: "";
+  position: absolute;
+  top: 20.4px;
+  left: 210px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 8px solid #ef4030;
+}
+.dep2 > li + li {
+  border-top: 1px solid #25272d;
+}
+
+.dep2 > li:hover > a {
+  display: block;
+  background-color: #ef4030;
+  color: white;
+  /* padding: 10px 0 10px 25px; */
+}
+
+/* depth 3 */
+/* 12.12수정 q */
+.dep3 {
+  width: 100%;
+  padding: 5px 15px;
+  line-height: 1.75;
+
+  /* 12-11 추가 */
+}
+.dep3 img {
+  display: inline-block;
+  margin: 0 8px 0 8px;
+}
+/* 12.12수정 */
+.dep3 li {
+  float: left; /* dep3 list 컨텐츠 왼쪽정렬 */
+  width: 33.33%; /* 컨텐츠 3개씩 정렬 */
+}
+.dep3 li a {
+  color: #b4b6c1;
+  font-size: 14px;
+  padding: 4px 4px 10px 0;
+}
+
+.dep3 li:hover a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* sub_visual */
+.sub_visual {
+  height: 243px;
+  padding: 110px 0 45px;
+  text-align: center;
+  background-color: #ddd;
+}
