@@ -18,7 +18,8 @@
             <!--헤딩태그 logo -->
             <h1 class="logo">
               <!-- <a href="https://was7894.github.io/project_1"> -->
-              <a href="../pro1_ver2/index.php">
+              <!-- <a href="../pro1_ver2/index.php"> -->
+              <a href="https://was7894.github.io/project_1/">
                 <img src="./gist_images/logo.png" alt="GIST logo">
               </a>
             </h1>
