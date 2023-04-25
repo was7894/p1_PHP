@@ -51,4 +51,4 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+KR&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nanum+Myeongjo&family=Noto+Sans+KR&family=Special+Elite&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/import.css">
+    <link rel="stylesheet" href="./css/import.css?ver=230425">

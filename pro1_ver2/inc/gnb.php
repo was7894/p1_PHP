@@ -27,7 +27,7 @@
             <div class="gnb">
               <ul class="dep1">
                 <li>
-                  <a href="#none"> About GIST</a>
+                  <a href="board.php"> About GIST</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">About GIST</strong>
@@ -113,7 +113,7 @@
                   <!-- depth1-1 end -->
                 </li>
                 <li>
-                  <a href="#none"> 입학</a>
+                  <a href="board.php"> 입학</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">입학</strong>
@@ -129,7 +129,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#none"> 교육</a>
+                  <a href="board.php"> 교육</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">교육</strong>
@@ -191,7 +191,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#none"> 연구</a>
+                  <a href="board.php"> 연구</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">연구</strong>
@@ -293,7 +293,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#none"> 대학생활</a>
+                  <a href="board.php"> 대학생활</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">대학생활</strong>
@@ -565,7 +565,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#none"> 미디어센터</a>
+                  <a href="board.php"> 미디어센터</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">미디어센터</strong>
@@ -619,7 +619,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#none"> 정보공개</a>
+                  <a href="board.php"> 정보공개</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">정보공개</strong>
@@ -719,7 +719,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="#none"> 공익신고센터</a>
+                  <a href="board.php"> 공익신고센터</a>
                   <div class="all_dep2">
                     <div class="dep2_inner">
                       <strong class="dep2_tit">공익신고센터</strong>

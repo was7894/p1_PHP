@@ -29,7 +29,7 @@ $row2 = mysqli_fetch_assoc($result2);
 $allCount = $row2['cnt'];
 
 ?>
-  <link rel="stylesheet" href="./inc/login.css">
+  <link rel="stylesheet" href="./css/board.css">
   </head>
   <body class="login">
     

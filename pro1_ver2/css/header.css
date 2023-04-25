@@ -239,8 +239,16 @@
 
 /* sub_visual */
 .sub_visual {
-  height: 243px;
-  padding: 110px 0 45px;
+  padding: 150px 0 45px;
   text-align: center;
-  background-color: #ddd;
+  background: url("../gist_images/board_visual.png") no-repeat center;
+  height: 350px;
+}
+.sub_visual .tit_sub {
+  color: white;
+  font-size: 50px;
+  padding-top: 30px;
+}
+.sub_visual .desc_sub {
+  color: white;
 }

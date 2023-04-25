@@ -6,6 +6,10 @@ include_once('inc/header.php');
 include_once('config.php');
 require_once('inc/functions.php');
 
+$page = 'sub';
+$pageTitle = '로그인페이지';
+$pageSubText = '로그인 페이지에 오신것을 환영합니다.';
+
 if(user_is_auth()){
   redirect('user.php');
 }
@@ -27,24 +31,9 @@ if(isset($_POST['login'])){
   }
 }
 
-
-//사용자가 입력한 정보의 유효성 검증
-
-/* 
-함수호출 필요없음.. include를 했기 때문..
-authenticate_user($email, $password); 
-*/
-
-//로그인시 이메일을 입력받아 사용자검증을 함
-//이메일을 비교해서 로그인상태인지 아닌지를 판단.
-/* if($_SERVER['REQUEST_METHOD']=='POST'){
-  output($_POST);
-}
-if(isset($_POST['login'])){
-  output($_POST); 
-}*/
 ?>
-  <link rel="stylesheet" href="./inc/login.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <!-- <link rel="stylesheet" href="./css/header.css"> -->
   </head>
   <body class="login">
     
@@ -67,7 +56,7 @@ if(isset($_POST['login'])){
                 <input type="password" id="password" name="password">
               </p>
               <p>
-                <input type="submit" name="login" value="로그인">
+                <input class="login_btn" type="submit" name="login" value="로그인">
               </p>
             </form>
             <p>이계정은 test계정입니다. user@user.com 1234</p>
@@ -80,17 +69,6 @@ if(isset($_POST['login'])){
                 ?>
               </p>
             </div>
-            <!-- <form action="" method="post" class="id_pass">
-              <p>
-                <label for="email">이메일</label>
-                <input type="email" name="email" id="email" autocapitalize="off">
-              </p>
-              <p>
-                <label for="password">비밀번호</label>
-                <input type="password" name="password" id="password" autocapitalize="off">
-              </p>
-              <p><input type="submit" name="login" value="로그인"></p>
-            </form> -->
           </div>
         </div>
       </section>
@@ -99,6 +77,7 @@ if(isset($_POST['login'])){
     <!-- //container section-->
     <?php
     include_once('inc/footer.php');
+    // require_once('inc/functions.php');
     ?>
   </body>
 </html>
