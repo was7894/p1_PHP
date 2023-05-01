@@ -5,16 +5,7 @@ include_once('inc/header.php');
 $page = 'sub';
 $pageTitle = 'GISTian';
 $pageSubText = 'Students are the heart and soul of GIST';
-
-// include_once('inc/login_inc');
-
 $conn = mysqli_connect("localhost", "wa7894", "rlagudtjq1065!", "wa7894");
-// $conn = mysqli_connect("localhost", "root","","mango_board");
-// if(! $conn){
-//   echo "연결에 실패하였습니다.". mysqli_connect_error(); 
-// }else{
-//   echo "연결에 성공하였습니다.". mysqli_connect_error();
-// }
 
 if($_GET['skey'] || $_GET['bdkey']) $sqlSearch = "and {$_GET['skey']} like '%{$_GET['bdkey']}%'";
 
@@ -43,6 +34,20 @@ $allCount = $row2['cnt'];
           <div class="sec2_layout">
             <h2 class="tit_cont">공지사항</h2>
             <span>총 게시글 : <?=$allCount?></span>
+            <h2>글 검색</h2>
+            <form method="get">
+              <h3>검색할 키워드를 입력하시오.</h3>
+              <select name="skey" id="findItem" title="검색 카테고리 선택">
+                <option value="title"<?php if($_GET['skey'] === 'title'){ ?> selected<?}?>>제목</option>
+                <option value="message"<?php if($_GET['skey'] === 'message'){ ?> selected<?}?>>내용</option>
+                <option value="name"<?php if($_GET['skey'] === 'name'){ ?> selected<?}?>>작성자</option>
+              </select>
+              <label for="search">키워드: </label>
+              <input type="search" id="search" name="bdkey" title="검색어를 입력하세요." value="<?= $_GET['bdkey'] ?>">
+    
+              <input type="submit" value="검색" />
+            </form>
+            <hr />
             <div class="tbl_g">
               <table>
                 <caption class="screen_out">글 목록</caption>
@@ -90,20 +95,7 @@ $allCount = $row2['cnt'];
               <a href="board.php" class="btn_g btn_g1">글목록</a>
             </div>
             <hr />
-            <h2>글 검색</h2>
-            <form method="get">
-              <h3>검색할 키워드를 입력하시오.</h3>
-              <select name="skey" id="findItem" title="검색 카테고리 선택">
-                <option value="title"<?php if($_GET['skey'] === 'title'){ ?> selected<?}?>>제목</option>
-                <option value="message"<?php if($_GET['skey'] === 'message'){ ?> selected<?}?>>내용</option>
-                <option value="name"<?php if($_GET['skey'] === 'name'){ ?> selected<?}?>>작성자</option>
-              </select>
-              <label for="search">키워드: </label>
-              <input type="search" id="search" name="bdkey" title="검색어를 입력하세요." value="<?= $_GET['bdkey'] ?>">
-    
-              <input type="submit" value="검색" />
-            </form>
-            <hr />
+            
             <h2>글 삭제</h2>
             <form action="delete.php" method="post">
               <h3>삭제할 글번호를 입력하시오.</h3>

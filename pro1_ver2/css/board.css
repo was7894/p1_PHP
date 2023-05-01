@@ -1,3 +1,7 @@
 .section2 {
   padding: 50px 0;
 }
+
+.section2 .tit_cont {
+  font-size: 35px;
+}
