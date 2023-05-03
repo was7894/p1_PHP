@@ -6,14 +6,66 @@
   position: absolute;
   top: 170px;
 }
-.login_btn {
+.sec2_layout .login_tit {
+  font-size: 35px;
+  margin: 0 0 20px 192px;
+}
+
+.sec2_layout .login_box {
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #ddd;
+}
+
+.sec2_layout .login_box .login_btn1 {
   width: 100px;
   padding: 0;
-  height: 50px;
-  background-color: red;
+  height: 40px;
+  background-color: #df0200;
   border-width: 0;
   font-size: 15px;
-  line-height: 50px;
   text-align: center;
   color: white;
+  cursor: pointer;
+}
+
+.sec2_layout .login_box .login_btn2 {
+  width: 100px;
+  padding: 0;
+  height: 40px;
+  background-color: #282828;
+  border-width: 0;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.sec2_layout .login_box .input_form {
+  padding: 5px 8px;
+  width: 200px;
+  height: 35px;
+  border: 1px solid #eee;
+}
+.sec2_layout .login_box .label_form {
+  display: inline-block;
+  width: 100px;
+}
+.btn_box {
+  margin-top: 15px;
+}
+
+.logout_btn {
+  background-color: #df0200;
+  color: #eee;
+  padding: 8px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logout_btn:hover,
+.logout_btn:active {
+  background-color: #ff4500;
 }

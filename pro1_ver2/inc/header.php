@@ -52,3 +52,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+KR&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nanum+Myeongjo&family=Noto+Sans+KR&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/import.css?ver=230425">
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <?php if(basename($_SERVER['PHP_SELF']) === 'index.php'){ ?>
+    <script src="js/weather_api.js"></script>
+    <?}?>
+    <script src="js/script.js?ver=230503"></script>

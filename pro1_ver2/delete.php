@@ -14,11 +14,11 @@ list(글목록)
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>섭형게시판</title>
+    <title>글삭제</title>
   </head>
   <body>
   
-    <h1>김형섭게시판</h1>
+    <h1>숫자지정글삭제</h1>
     <h2>글 목록</h2>
     <ul>
     <?php
@@ -42,7 +42,7 @@ list(글목록)
     </ul>
     
     <hr />
-    <p><a href="index.php">메인화면으로 돌아가기</a></p>
+    <p><a href="board.php">게시판 화면으로 돌아가기</a></p>
     <hr />
     
     

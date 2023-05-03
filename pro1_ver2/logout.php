@@ -5,4 +5,3 @@
   require_once('inc/functions.php');
   redirect('login.php'); exit();
 ?>
-

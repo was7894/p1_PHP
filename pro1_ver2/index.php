@@ -3,7 +3,9 @@ $title="광주과학기술원 메인페이지";
 include('inc/header.php');
 ?>
   </head>
-
+  <script>
+    location.href="https://was7894.github.io/project_1/"
+  </script>
   <body>
     <!-- popup -->
     <div id="layer">

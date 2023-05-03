@@ -4,4 +4,33 @@
 
 .section2 .tit_cont {
   font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.sear_box {
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 6px -6px #666;
+}
+.del_box {
+  width: 600px;
+  height: 123px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 6px -6px #666;
+}
+
+.screen_out {
+  display: block;
+  overflow: hidden;
+  font-size: 1px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.total_board {
+  text-align: center;
 }

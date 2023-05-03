@@ -20,7 +20,7 @@
           <div class="sec2_layout">
             <h1 class="user_tit"><?=$title?></h1>
             <p>회원님 안녕하세요.</p>   
-            <a href="logout.php">로그아웃</a>
+            <a href="logout.php" class="logout_btn">로그아웃</a>
           </div>
         </div>
       </section>

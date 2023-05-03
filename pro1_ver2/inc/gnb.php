@@ -1,4 +1,8 @@
 
+    <?php
+      session_start();
+      require_once('inc/functions.php');
+    ?>
     <!-- header -->
     <header class="header">
       <!-- header top -->
@@ -747,7 +751,12 @@
               <li>
                 <a href="#none"><img src="./gist_images/btn_search.png" alt=""></a>
               </li>
-              <li><a href="login.php">Login</a></li>
+              <?php if(user_is_auth()){?>
+                <li><a href="logout.php">Logout</a></li>
+              <?}else{?>
+                <li><a href="login.php">Login</a></li>
+              <?}?>
+              
               <li><a href="#none">English</a></li>
               <li><a href="#none">Portal</a></li>
               <li>
